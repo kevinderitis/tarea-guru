@@ -1,0 +1,16 @@
+{
+  "name": "tarea-guru",
+  "version": "1.0.0",
+  "description": "API para generación automática de tareas",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Kevin De Ritis",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.9.0"
+  }
+}
