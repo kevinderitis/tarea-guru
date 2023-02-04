@@ -1,7 +1,9 @@
+const mongoose = require('mongoose')
+
 const homeworkSchema = new mongoose.Schema({
     user: String,
     email: String,
-    homework: [ {
+    data: [ {
         type: String
     } ]
 })

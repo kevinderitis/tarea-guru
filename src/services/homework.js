@@ -4,7 +4,7 @@ const { quoteHomework } = require('../utils/utils')
 const saveHomeworkService = async homework => {
     try {
       await saveHomework(homework)   
-      let value = quoteHomework(homework)
+      let value = quoteHomework(homework.data)
       return value;
     } catch (error) {
         console.log(error)
