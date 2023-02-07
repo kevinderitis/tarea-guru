@@ -16,8 +16,8 @@ const mercadopagoPayment = async email => {
           }
         ],
         back_urls: {
-            success: "https://www.tarea.guru/homework/backURL",
-            failure: "https://www.tarea.guru/failure.html"
+            success: `${config.HOSTNAME}/homework/backURL`,
+            failure: `${config.HOSTNAME}/failure.html`
         },
         payer: {
           email
