@@ -1,0 +1,1159 @@
+@font-face {
+    font-family: Conv_shellypalmer-circular-std-book;
+    src: url(../fonts/shellypalmer-circular-std-book.eot);
+    src: local(""), url(../fonts/shellypalmer-circular-std-book.woff) format("woff"), url(../fonts/shellypalmer-circular-std-book.ttf) format("truetype"), url(../fonts/shellypalmer-circular-std-book.svg) format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+a,
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+*,
+body,
+img {
+    margin: 0;
+    padding: 0;
+}
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+* {
+    box-sizing: border-box;
+}
+a {
+    outline: 0;
+    border: none;
+}
+a:focus {
+    outline: 0;
+    border: none;
+}
+a:hover {
+    outline: 0;
+    border: none;
+}
+button {
+    outline: 0;
+    border: none;
+}
+button:hover {
+    outline: 0;
+    border: none;
+}
+button:focus {
+    outline: 0;
+    border: none;
+}
+.spacer {
+    clear: both;
+    line-height: 0;
+    font-size: 0;
+}
+img {
+    border: 0;
+    height: auto;
+    max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+html {
+    overflow-x: hidden;
+}
+body {
+    overflow-x: hidden;
+    font-family: Conv_shellypalmer-circular-std-book;
+}
+.section {
+    padding: 30px 0;
+}
+h1,
+h2 {
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+}
+h1 span {
+    display: block;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+}
+h3 {
+    color: #2b3131;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 31px;
+}
+h3 span {
+    display: block;
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    color: #b862a2;
+    font-size: 16px;
+    line-height: 26px;
+}
+h3 span strong {
+    font-weight: 700;
+}
+h4 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    color: #2b3131;
+    font-size: 16px;
+    line-height: 26px;
+}
+p {
+    margin-top: 15px;
+    color: #929292;
+    font-size: 16px;
+    line-height: 26px;
+}
+p.bigfont {
+    font-size: 18px;
+    line-height: 28px;
+}
+.logo img{
+    max-width: 250px;
+}
+.topouter {
+    position: relative;
+    background: #1e0a50 url(../images/bg.webp) no-repeat top right;
+    background-size: cover;
+    min-height: 500px;   
+}
+.bannrimg {
+    position: absolute;
+    right: 0;
+    top: 30%;
+    display: none;
+}
+.bannrimg img {
+    display: block;
+}
+.form-control {
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    padding: 0 20px;
+    height: 60px;
+    color: #acacac;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    margin-top: 15px;
+    box-shadow: none;
+}
+.form-control:focus {
+    box-shadow: none;
+    outline: 0;
+    border: 1px solid #e1e1e1;
+}
+.form-control::-webkit-input-placeholder {
+    color: #acacac;
+    opacity: 1;
+}
+.form-control::-moz-placeholder {
+    color: #acacac;
+    opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+    color: #acacac;
+    opacity: 1;
+}
+.form-control:-moz-placeholder {
+    color: #acacac;
+    opacity: 1;
+}
+.buttonouter {
+    margin-top: 30px;
+}
+.btn-default {
+    display: inline-block;
+     background: rgb(0,176,29);
+background: linear-gradient(103deg, rgba(0,176,29,1) 41%, rgba(13,213,46,1) 67%);
+    border-radius: 50px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    padding: 20px 50px;
+    border: none;
+}
+.btn-default:hover {
+    background: linear-gradient(90deg, rgba(166,71,170,1) 0%, rgba(224,161,144,1) 100%); 
+    color: #fff;
+}
+.btn-default:focus {
+    background: linear-gradient(90deg, rgba(166,71,170,1) 0%, rgba(224,161,144,1) 100%); 
+    color: #fff;
+}
+.logo {
+    text-align: center;
+}
+.topouter .row {
+    margin-top: 5px;
+}
+.startext {
+    text-align: center;
+}
+.startext i {
+    display: inline-block;
+    vertical-align: top;
+    color: #e8ae8c;
+    font-size: 16px;
+    margin: 0px 1px 0;
+}
+.startext span {
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    color: #fff;
+}
+.topouter h1 {
+    margin: 0 0 20px;
+    text-align: center;
+}
+.topouter ul {
+    margin: 0;
+    padding: 0;
+}
+.topouter ul li {
+    background: url(../images/tick.webp) left 4px no-repeat;
+    padding-left: 40px;
+    color: #fff;
+    font-size: 17px;
+    line-height: 25px;
+    margin: 10px 0 0;
+}
+.topouter ul li:first-child {
+    margin: 0;
+}
+.testisec {
+    margin-top: 20px;
+    text-align: center;
+}
+.testiimg {
+    width: 90px;
+    border-radius: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+    vertical-align: middle;
+}
+.testicontent p {
+    color: #fff;
+    margin: 0;
+    font-size: 17px;
+    line-height: 27px;
+}
+.testiauthor {
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    color: #fff;
+    margin-top: 15px;
+    font-size: 14px;
+}
+.bannerright .testicontent {
+    width: 100%;
+    text-align: center;
+}
+.bannerrightauthorsec {
+    text-align: center;
+    margin-top: 20px;
+}
+.bannerrightauthorsec .testiimg {
+    margin: 0 15px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.bannerrightauthorsec .testiauthor {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+.testistar {
+    margin-top: 5px;
+    text-align: left;
+}
+.testistar i {
+    display: inline-block;
+    vertical-align: top;
+    color: #f6c243;
+    font-size: 12px;
+    margin: 3px 1px 0;
+}
+.bannersmltext {
+    font-size: 14px;
+    line-height: 22px;
+    color: #fff;
+    margin-top: 20px;
+}
+.bannerform {
+    background: #fff;
+    padding: 25px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+}
+.bannerright .bannersmltext {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.rangeouter {
+    margin: 70px 0 0;
+    position: relative;
+}
+.rangeslider__value-bubble {
+    border: none;
+    display: block;
+    padding: 8px 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: -48px;
+    margin-bottom: 25px;
+    width: 100px;
+    margin-left: -50px;
+    text-align: center;
+    text-align: center;
+    background: #e8ae8c;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    z-index: 9;
+    font-size: 15px;
+    color: #fff;
+}
+.rangeslider__handle::after{
+	background: #b862a2;
+}
+.rangeslider__fill {
+    background: #b862a2;
+    }
+.rangeslider__value-bubble::after {
+    content: "";
+    background: url(../images/downarrow.webp) no-repeat;
+    width: 10px;
+    height: 6px;
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.monthrangeouter {
+    margin-top: 80px;
+}
+.monthrangeouter .rangeslider__value-bubble {
+    margin-left: -20px;
+}
+.formrow {
+    margin-top: 60px;
+}
+.formrow:first-child {
+    margin-top: 40px;
+}
+.formrow label {
+    color: #0068ff;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    width: 100%;
+    display: block;
+    font-size: 20px;
+}
+.formrow label strong {
+    font-weight: 700;
+}
+.topouter .btn-default {
+    width: 100%;
+}
+.loansec ul {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.loansec ul li {
+    margin: 20px 0;
+    text-align: left;
+}
+.loansec ul li p {
+    font-size: 18px;
+    color: #003c54;
+}
+.howsec {
+    background: rgb(0,104,255);
+background: linear-gradient(103deg, rgba(0,104,255,1) 27%, rgba(70,167,255,1) 67%);
+}
+.howsec h3{
+	color: #fff;
+}
+.howsec .row {
+    margin-top: 10px;
+}
+.howbox {
+    background: #fff;
+    padding: 25px 30px;
+    text-align: center;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.09);
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.09);
+    margin: 64px 0 0;
+}
+.howimg {
+    margin-top: -80px;
+    margin-bottom: 15px;
+}
+.howbox h5 strong {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 100%;
+    background: #f4b23d;
+    color: #003c54;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.howbox h5 span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    color: #003c54;
+}
+.howbox p {
+    line-height: 24px;
+}
+.howsec .buttonouter {
+    margin-top: 50px;
+}
+.howsec .startext {
+    text-align: center;
+    margin-top: 25px;
+}
+.howsec .startext span {
+    color: #fff;
+}
+.reviewsec .row {
+    margin-top: 10px;
+}
+.reviewbox {
+    margin: 15px 0;
+}
+.reviewimg {
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 100%;
+}
+.reviewimg img {
+    width: 100%;
+    display: block;
+    border-radius: 100%;
+}
+.srarreview {
+    margin-top: 15px;
+    text-align: center;
+}
+.srarreview i {
+    display: inline-block;
+    vertical-align: top;
+    color: #f6c243;
+    font-size: 12px;
+    margin: 3px 1px 0;
+}
+.reviewbox p {
+    color: #391368;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 10px;
+}
+.accordion-header-icon,.accordion-header-icon.accordion-header-icon-active{
+	background-size: 25px;
+}
+.authortext {
+    margin-top: 10px;
+    color: #7c7c7c;
+    font-size: 16px;
+    text-align: center;
+}
+.faqsec {
+    background: #f4f4f4;
+}
+.faqinner {
+    background: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    position: relative;
+}
+.botctasec {
+    background: #220555 url(../images/work-bg.webp) no-repeat top right;
+    min-height: 500px;
+    background-size: cover; 
+    padding: 30px 0;
+}
+.botctasec .buttonouter {
+    text-align: center;
+}
+.botctasec p {
+    font-size: 18px;
+    font-family: Montserrat, sans-serif;
+    line-height: 28px;
+    font-weight: 300;
+    color: #fff;
+}
+.botctasec .startext {
+    margin-bottom: 20px;
+}
+.footer {
+    text-align: center;
+}
+.copyright {
+    margin: 15px 0;
+    font-size: 16px;
+    line-height: 26px;
+    color: #929292;
+}
+.footlogoright {
+    text-align: center;
+}
+.footlogoright a {
+    margin: 0 15px;
+}
+.footertext {
+    margin-top: 30px;
+}
+.loanimg {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+    width: 80px;
+}
+.loansec ul li p {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 0;
+    font-size: 16px;
+}
+.parsley-required,
+.parsley-type {
+    color: #000;
+    font-size: 14px;
+    margin-top: 12px;
+    background: 0 0;
+}
+.parsley-error {
+    background-color: #f2dede;
+    border: 1px solid #eed3d7;
+    color: #b94a48;
+}
+.parsley-success {
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    color: #468847;
+}
+.bannerright ul.parsley-errors-list {
+    margin: 0;
+}
+.bannerright ul.parsley-errors-list li {
+    color: #000;
+    margin-top: 10px;
+    padding: 0;
+    background: 0 0;
+}
+.bannerright ul.parsley-errors-list li:first-child {
+    margin-top: 10px;
+}
+.btn-default span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+.btn-default img {
+    display: inline-block;
+    vertical-align: middle;
+}
+@media only screen and (min-width: 360px) {
+    h1,
+    h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    h1 span {
+        font-size: 23px;
+        line-height: 33px;
+    }
+    h3 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    h3 span {
+        font-size: 19px;
+        line-height: 29px;
+    }
+    h4 {
+        font-size: 19px;
+        line-height: 29px;
+    }
+}
+@media only screen and (min-width: 480px) {
+    h1,
+    h2 {
+        font-size: 37px;
+        line-height: 42px;
+    }
+    h1 span {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    h3 span {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    h4 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .bannerform {
+        width: 445px;
+        margin: 10px auto 20px;
+    }
+    .howbox h5 strong {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 10px 0 0;
+    }
+}
+@media only screen and (min-width: 576px) {
+    h1,
+    h2 {
+        font-size: 41px;
+        line-height: 46px;
+    }
+    h1 span {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    h3 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    h3 span {
+        font-size: 21px;
+        line-height: 31px;
+    }
+    .topouter h1 {
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+    }
+    .bannerright ul {
+        margin-left: 30px;
+    }
+    .loansec ul li {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 20px 30px;
+    }
+    .faqinner {
+        margin-top: 25px;
+    }
+    .loanimg {
+        display: block;
+        margin: 0;
+        width: auto;
+    }
+    .loansec ul li p {
+        display: block;
+        margin-top: 15px;
+        font-size: 18px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    h1,
+    h2 {
+        font-size: 31px;
+        line-height: 36px;
+    }
+    h1 span {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    h3 {
+        font-size: 36px;
+        line-height: 46px;
+    }
+    h3 span {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    h4 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .container {
+        max-width: 750px;
+    }
+    .section {
+        padding: 40px 0;
+    }
+    .logo {
+        text-align: left;
+    }
+    .topouter h1 {
+        text-align: left;
+    }
+    .startext {
+        text-align: left;
+    }
+    .testisec {
+       margin-top: 35px;
+margin-bottom: 35px;
+    }
+    .bannerform {
+        margin: 0;
+        width: 100%;
+    }
+    .loansec ul li {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 20px 35px;
+    }
+    .reviewsec .row {
+        margin-top: 20px;
+    }
+    .faqinner {
+        width: 700px;
+        margin: 35px auto 0;
+        padding: 30px 35px;
+    }
+    .botctasec .buttonouter {
+        text-align: left;
+    }
+}
+@media only screen and (min-width: 992px) {
+    h1,
+    h2 {
+        font-size: 41px;
+        line-height: 46px;
+    }
+    h1 span {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    h3 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    h3 span {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    h4 {
+        font-size: 23px;
+        line-height: 33px;
+    }
+    .container {
+        max-width: 970px;
+    }
+    .bannerform {
+        padding: 30px;
+    }
+    .loansec ul {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .loansec ul li {
+        margin: 0 12px;
+    }
+    .botctasec p {
+        font-size: 24px;
+        line-height: 34px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    h1,
+    h2 {
+        font-size: 56px;
+        line-height: 61px;
+    }
+    h1 span {
+        font-size: 43px;
+        line-height: 53px;
+    }
+    h4 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .container {
+        max-width: 1170px;
+    }
+    .section {
+        padding: 50px 0;
+    }
+    .reviewsec.section {
+    padding: 90px 0;
+}
+    .testisec {
+        text-align: left;
+    }
+    .testiimg {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 20px;
+    }
+    .testicontent {
+        display: inline-block;
+        vertical-align: top;
+        width: 474px;
+    }
+    .bannersmltext {
+        margin-top: 25px;
+    }
+    .bannerform {
+        padding: 40px;
+    }
+    .loansec ul {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .loansec ul li {
+        margin: 0 32px;
+    }
+    .howsec .row {
+        margin-top: 80px;
+    }
+    .howbox {
+        margin: 0;
+        min-height: 425px;
+    }
+    .reviewsec .row {
+        margin-top: 70px;
+    }
+    .reviewbox {
+        margin: 0;
+    }
+    .botctasec {
+       padding: 70px 0;
+    }
+    .botctaimg {
+        margin: -30px 0;
+    }
+    .footer {
+        text-align: left;
+    }
+    .footlogo {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .copyright {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 0 0 20px;
+    }
+    .footlogoright {
+        text-align: right;
+    }
+    .footlogoright a {
+        margin: 0 0 0 50px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .owl-theme .owl-nav.disabled + .owl-dots {
+        margin-top: 30px;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    h1,
+    h2 {
+        font-size: 55px;
+        line-height: 65px;
+    }
+    h1 span {
+        font-size: 42px;
+        line-height: 57px;
+    }
+    h3 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    h3 span {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .container {
+        max-width: 1250px;
+    }
+    .testicontent {
+        width: 480px;
+    }
+    .loansec ul {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    .loansec ul li {
+        margin: 0 40px;
+    }
+    .howbox {
+        min-height: 402px;
+    }
+    .botctasec p {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .bannerright {
+    max-width: 480px;
+margin-left: 50px;
+}
+
+}
+@media only screen and (min-width: 1600px) {
+    /*.bannrimg {
+        display: block;
+    }*/
+
+    .topouter .container {
+        max-width: 1360px;
+    }
+    .section {
+    padding: 80px 0;
+}
+.loansec h3 {
+    margin-bottom: 30px;
+}
+.loansec ul {
+    margin-top: 80px;
+    margin-bottom: 70px;
+}
+.testisec {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.container {
+    max-width: 1350px;
+}
+.howsec .col-xl-4{
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.howsec .buttonouter {
+    margin-top: 70px;
+}
+.howsec .startext {
+    text-align: center;
+    margin-top: 35px;
+}
+.reviewsec.section {
+    padding: 100px 0;
+}
+.faqinner {
+    width: 80%;
+    margin: 60px auto 0;
+    padding: 80px 100px;
+}
+.botctasec {
+    padding: 150px 0;
+}
+.startext span {
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 18px;
+    color: #fff;
+}
+.testiimg {
+    margin-right: 30px;
+}
+.srarreview {
+    margin-top: 30px;
+    text-align: center;
+}
+.authortext {
+    margin-top: 20px;
+}
+
+.logo img{
+    max-width: 300px;
+}
+.bannerright {
+    max-width: 540px;
+    margin-left: 50px;
+}
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    /*.bannrimg {
+        display: block;
+    }*/
+    .topouter {
+    position: relative;
+    background: rgb(0,104,255);
+background: linear-gradient(103deg, rgba(0,104,255,1) 34%, rgba(70,166,255,1) 74%, rgba(70,166,255,1) 90%);
+}
+
+.botctasec {
+    background: rgb(0,104,255);
+background: linear-gradient(103deg, rgba(0,104,255,1) 34%, rgba(70,166,255,1) 74%, rgba(70,166,255,1) 90%);
+    min-height: 400px;
+   padding: 70px 0;
+}
+.buttonouter {
+    margin-top: 50px;
+}
+.bannerright .bannersmltext {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.section {
+    padding: 50px 0;
+}
+.topouter .btn-default {
+    width: 100%;
+    padding: 20px 30px;
+}
+.topouter .row {
+    margin-top: 25px;
+}
+}

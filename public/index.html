@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="icon" href="images\favicon.png">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Tarea.Guru</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="css\bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css\style.css" rel="stylesheet" type="text/css">
+<script src="https://kit.fontawesome.com/4d97bed4dd.js" crossorigin="anonymous"></script><script src="js\jquery-1.11.2.min.js"></script>
+<script>
+new WOW().init();
+</script>
+<script>
+$(document).ready(function() {
+    $(".accordion").accordion({
+       // firstChildExpand: !1
+    })
+})
+</script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<!-- <script src="./js/api-functions.js"></script> -->
+</head>
+<body>
+<div class="logo bg-white pl-5"><a href="https://www.tutarea.guru"><img src="images\logoblue.webp"></a></div>
+<div class="topouter section pt-4">     
+   <div class="container">
+    <div class="row align-items-center">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
+        <div class=" mt-5 text-center text-md-left"><span style="color:#ffc600;"><i class="fa  fa-star"></i><i class="fa  fa-star"></i><i class="fa  fa-star"></i><i class="fa  fa-star"></i><i class="fa  fa-star"></i></span><span class="ml-1 text-white testiauthor">¡Más de 5000 tareas hechas!</span></div>
+         <h1 class="mt-3 d-none d-md-block"><span>Haz tu tarea escolar ya mismo, con una <u style="font-weight: 900;">Inteligencia Artificial</u> </span></h1>
+         <h5 class="mt-3 d-md-none text-white text-center" style="font-size: 28px; ">Haz tu tarea escolar <br>ya mismo, con una <u style="font-weight: 900;color:#ffc600;"><br>Inteligencia Artificial</u> </h5>
+         <div class="w-75 mx-auto pt-5 d-md-none"><img src="images\mascota-logo.webp" class="img-fluid"></div>
+
+        <ul class="d-none d-md-block " style="list-style: none;">
+          <li><i class="fa  fa-check" style="color:#ffc600;"></i> Responde preguntas de todas las materias</li>
+          <li><i class="fa  fa-check" style="color:#ffc600;"></i> Trabajo completo en menos de 10 minutos</li>
+          <li><i class="fa  fa-check" style="color:#ffc600;"></i> Respuestas largas, precisas y completas</li>
+          <li><i class="fa  fa-check" style="color:#ffc600;"></i> Nivel secundario y universitario</li>
+         </ul>
+          <div class="pl-5 mt-3 d-none d-md-block"><h4 class="text-danger"><strike>$999ARS</strike></h4><h2>$499ARS</h2><span class="text-white text-right" style="color:#ffc600;">por cada pregunta</span>
+          </div>
+          <div class=" mt-3 d-md-none text-center"><hr class="bg-white">
+              <h3 class="text-danger"><strike>$999ARS</strike></h3><h2 style="font-size:49px;">$499ARS</h2><br><span class="text-white text-right" style="color:#ffc600;">por cada pregunta</span>
+          </div>
+        <div class="testisec d-none d-md-block">
+          <div class="testiimg"><img src="images\smltestiimg.webp" width="100" height="100" ></div>
+          <div class="testicontent">
+            <p>“Excelente idea. Me sirvió para completar unos TP de una materia que no me interesaba! Me dió respuestas completas, mucho mejor de lo que esperaba (no tuve que cambiarle nada) Lo recomiendo mucho!”</p>
+              <div class=" d-none d-sm-block mt-2"><span style="color:#e8ae8c;"><i class="fa  fa-star"></i><i class="fa  fa-star"></i><i class="fa  fa-star"></i><i class="fa  fa-star"></i><i class="fa  fa-star"></i></span><span class="testiauthor mt-0 ml-1 ">Matías Ramalli</span></div>
+           </div>
+        </div>
+       </div>
+        <a id="formu"></a>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mt-5">
+        <div class="bannerright" id="bannerright">
+          <div class="bannerform">
+            <h4 class="text-center">Colocá las preguntas y recibí las respuestas en 10min</h4>
+            <form action="#" data-parsley-validate="">
+               
+              <div class="formrow">
+                <label><strong>1.</strong> Tu nombre*</label>
+                <input type="text" id="nameForm" class="form-control" placeholder="Escribe tu nombre" required="">
+              </div>
+                <div class="formrow mt-5">
+                <label><strong>2.</strong> Tu e-mail*</label>
+                <input type="email" id="emailForm" class="form-control" placeholder="Escribe tu e-mail" required="">
+              </div>
+              <div class="buttonouter">
+                <button class="btn-default wow zoomIn shadow" onclick="sendUser()"><span>Continuar</span><img src="images\handicon.webp" width="30" height="19" ></button>
+              </div>
+            </form>
+          </div>
+           <ul class="d-block d-md-none mt-4" style="list-style: none;">
+                 <li><i class="fa  fa-check" style="color:#ffc600;"></i> Responde preguntas de todas las materias</li>
+          <li><i class="fa  fa-check" style="color:#ffc600;"></i> Trabajo completo en menos de 10 minutos</li>
+          <li><i class="fa  fa-check" style="color:#ffc600;"></i> Respuestas largas, precisas y completas</li>
+          <li><i class="fa  fa-check" style="color:#ffc600;"></i> Nivel secundario y universitario</li>
+          </ul>
+          <div class="testisec d-md-none mt-5">
+            <div class="testicontent">
+            <p>“Excelente idea. Me sirvió para completar unos TP de una materia que no me interesaba! Me dió respuestas completas, mucho mejor de lo que esperaba (no tuve que cambiarle nada) Lo recomiendo mucho!”</p>
+            </div>
+            <div class="bannerrightauthorsec ">
+              <div class="testiimg"><img src="images\smltestiimg.webp" width="100" height="100" ></div>
+              <div class="testiauthor">Ramiro Fernández
+                <div class="testistar"><i class="fa  fa-star"></i><i class="fa  fa-star"></i><i class="fa  fa-star"></i><i class="fa  fa-star"></i><i class="fa  fa-star"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section loansec">
+  <div class="container">
+    <h3 class="text-center"><img src="images\robot.webp" style="width:50px;" class="img-fluid"> Ahorrá tiempo y mejorá tus calificaciones.</h3>
+    <p class="bigfont text-center col-md-8 mx-auto">En menos de 10 minutos tendrás en tu e-mail la respuesta a todas tus preguntas, sin importar la materia. Respuetas completas, precisas y bien redactadas listas para entregar.  </p>
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <ul>
+          <li>
+            <div class="loanimg wow zoomIn"><img src="images\confidencial.webp" width="150" height="91" ></div>
+            <p class="text-center">100% confidencial</p>
+          </li>
+          <li>
+            <div class="loanimg wow zoomIn"><img src="images\calidad.webp" width="150" height="91" ></div>
+            <p class="text-center">Calidad Garantizada</p>
+          </li>
+            <li>
+            <div class="loanimg wow zoomIn"><img src="images\ahorro.webp" width="150" height="91" ></div>
+            <p class="text-center">$499 ARS por pregunta</p>
+          </li>
+        </ul>
+        <div class="text-center"><a href="#formu" class="btn-default wow zoomIn"><span>Cotizar mi tarea</span><img src="images\handicon.webp" width="30" height="19" ></a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section howsec">
+  <div class="container">
+    <h3 class="text-center">¿Cómo funciona?<span></span></h3>
+    <div class="row">
+      <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="howbox">
+          <div class="howimg wow zoomIn"><img src="images\pregunta.webp" width="250" height="269" ></div>
+          <h5><strong>1</strong><span>Escribí las preguntas</span></h5>
+          <p>Trabajamos todas las materias.</p>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="howbox">
+          <div class="howimg wow zoomIn"><img src="images\presupuesto.webp" width="250" height="269" ></div>
+          <h5><strong>2</strong><span>Cotizá el valor</span></h5>
+          <p>Al Instante te decimos cuánto te sale. Pagá por cada pregunta que necesites.¡A medida!</p>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 offset-md-3 offset-xl-0">
+        <div class="howbox">
+          <div class="howimg wow zoomIn"><img src="images\email.webp" width="250" height="269" ></div>
+          <h5><strong>3</strong><span>Recibí las respuestas por email</span></h5>
+          <p>En pocos minutos tendrás las respuestas listas para entregar. Previo al envío son verificadas por expertos en la materia</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center buttonouter"><a href="#formu" class="btn-default wow zoomIn"><span>Cotizar mi tarea</span><img src="images\handicon.webp" width="30" height="19" ></a></div>
+      <div class="text-center mx-auto text-white mt-3"><span style="color:#e8ae8c;"><i class="fa  fa-star"></i><i class="fa  fa-star"></i><i class="fa  fa-star"></i><i class="fa  fa-star"></i><i class="fa  fa-star"></i></span><span class=""> ¡Más de 2500 estudiantes felices!</span></div>
+  </div>
+</div>
+<div class="section ">
+  <div class="container ">
+    <h3 class="text-center">Hola. Soy<img src="images\logoblue.webp" class="w-md-25 img-fluid"> </h3>    
+    <hr style="background: rgb(245,185,35);
+    background: linear-gradient(100deg, rgba(245,185,35,1) 16%, rgba(238,93,49,1) 55%); opacity:1;border:none;" class="py-1 mt-0 col-md-5 text-center mx-auto">
+      <div class="text-dark mt-5 text-left mx-auto col-md-6">
+           <h4><span>Soy una Inteligencia Artificial de útlima generación</span></h4>
+          <p> Nuestro sistema utiliza la <b>inteligencia artificial</b> más avanzada para realizar tus tareas escolares de manera <b>eficiente y precisa</b>. Ya sea que necesites ayuda con un ensayo, una hoja de cálculo o un proyecto de ciencias,nuestro equipo de IA está aquí para ayudarte.</p><br><br>
+<h4><span>✅ Así funciona:</span></h4><p>Solo sube la tarea que necesitas que se haga y nuestro sistema hará el resto. Puedes esperar un resultado de alta calidad en poco tiempo. Además, todas las tareas son revisadas por un equipo de expertos en educación para garantizar la precisión y relevancia. </p>
+          <br><br>
+          <h4><span>❌ No te preocupes por el plagio</span></h4>
+          <p>Todas las
+tareas son completamente originales y están
+escritas desde cero para asegurarte una nota
+alta y un aprendizaje real.</p>
+       </div>
+  </div>
+</div>
+    
+<div class="section py-5" style="background: rgb(0,104,255);
+background: linear-gradient(103deg, rgba(0,104,255,1) 34%, rgba(70,166,255,1) 74%, rgba(70,166,255,1) 90%);">
+  <div class="container ">
+       <div class="text-white mx-auto">
+           <h3 style="font-size:29px; " class="text-center text-white">Este servicio es para vos si...</h3>
+                <ul class="mt-3 col-md-5 mx-auto pl-md-4 lead" style="list-style: none;font-size:17px;">
+                     <li><i class="fa  fa-check " style="color:#e8ae8c;"></i> Te olvidaste de hacer tu tarea o TP</li>
+                    <li><i class="fa  fa-check pt-3" style="color:#e8ae8c;"></i> La materia no te interesa y querés aprobarla</li>
+                    <li><i class="fa  fa-check pt-3" style="color:#e8ae8c;"></i> Estás complicado/a con los tiempos</li>
+                    <li><i class="fa  fa-check pt-3" style="color:#e8ae8c;"></i> Querés altas calificaciones para mejorar tu promedio</li>
+                    <li><i class="fa  fa-check pt-3" style="color:#e8ae8c;"></i> Querés perfeccionar tu trabajo práctico</li>
+                </ul>
+          
+       </div>
+<div class="text-center buttonouter"><a href="#formu" class="btn-default wow zoomIn"><span>Cotizar mi tarea</span><img src="images\handicon.webp" width="30" height="19" ></a></div>
+      <div class="text-center text-white mt-3"><span style="color:#e8ae8c;"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa  fa-star"></i></span><span> ¡Más de 2500 estudiantes felices!</span></div>
+  </div>
+</div>
+<div class="reviewsec section py-5">
+  <div class="container">
+     <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+          <h3 class="text-dark text-center mb-4">¡Deja que la IA haga el trabajo por vos!</h3>
+          <hr>
+        <div class="owl-carousel owl-theme top-carousel">
+          <div class="item">
+            <div class="reviewbox">
+              <div class="reviewimg wow zoomIn"><img src="images\review-anonima.webp" width="100" height="100" ></div>
+              <div class="srarreview"><i class="fa  fa-star"></i><i class="fa  fa-star"></i><i class="fa  fa-star"></i><i class="fa  fa-star"></i><i class="fa  fa-star"></i></div>
+              <p  style="color:#0067ff;">“Buenísimo no sabía que existía esto. Es una maravilla”</p>
+              <div class="authortext">Daniel Santos</div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="reviewbox">
+              <div class="reviewimg wow zoomIn"><img src="images\review-anonima.webp" width="100" height="100" ></div>
+              <div class="srarreview"><i class="fa  fa-star"></i><i class="fa  fa-star"></i><i class="fa  fa-star"></i><i class="fa  fa-star"></i><i class="fa  fa-star"></i></div>
+              <p  style="color:#0067ff;">“Los recomiendo 100%. Lo usé para complementar partes de un trabajo de sociología”</p>
+              <div class="authortext">Francisca Munne</div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="reviewbox">
+              <div class="reviewimg wow zoomIn"><img src="images\review-anonima.webp" width="100" height="100" ></div>
+              <div class="srarreview"><i class="fa  fa-star"></i><i class="fa  fa-star"></i><i class="fa  fa-star"></i><i class="fa  fa-star"></i><i class="fa  fa-star"></i></div>
+              <p  style="color:#0067ff;">“Excelente servicio. Realmente estamos en el futuro, me voló la peluca!”</p>
+              <div class="authortext">Enrique Abril</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="faqsec section">
+  <div class="container">
+    <h3 class="text-center">Preguntas frecuentes<span style="color:#0068ff;">¿Seguís con dudas? Aquí tenemos la respuesta a tus preguntas</span></h3>
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="faqinner">
+          <div class="accordion">
+            <h6 style="color:#0068ff;">🎯 ¿Cómo funciona tuTarea.gurú?</h6>
+            <div>
+              <p> Usamos la <b>inteligencia artificial</b>de útlima generación para realizar tus tareas y trabajos prácticos escolares de manera <b>eficiente y precisa</b>. El trabajo que haremos es de alta calidad, y será evaluado por expertos en cada materia, para garantizar la precisión y relevancia.</p>
+            </div>
+            <h6 style="color:#0068ff;">🎯 ¿Qué pasa si varias personas preguntan lo mismo? ¿Van a darme la misma respuesta que a los demás?</h6>
+            <div>
+              <p>Si varias personas preguntan lo mismo, no debes preocuparte. Dado que soy una IA, estoy programada para dar respuestas con enfoques y redacciones distintas. ¡Es imposible detectarlo!</p>
+            </div>
+              <h6 style="color:#0068ff;">🎯 ¿Cómo es la redacción?</h6>
+            <div>
+              <p>Completa, precisa y humanizada. No se diferencia de un texto redactado por un ser humano.</p>
+            </div>
+            <h6 style="color:#0068ff;">🎯 ¿Revisan las respuestas?</h6>
+            <div>
+              <p>Sí. Tu respuesta será revisada por un profesional de la materia para para corroborar que la respuesta sea correcta</p>
+            </div>
+             
+            <h6 style="color:#0068ff;">🎯 ¿Cuánto tardan y a dónde me lo envían?</h6>
+            <div>
+              <p>Menos de 10 minutos, y se envía a tu correo electrónico en formato PDF</p>
+            </div>
+             
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="botctasec">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-xl-7 col-lg-8 col-md-8 col-sm-12 col-12">
+        <div class="startext text-left"><i class="fa  fa-star"></i><i class="fa  fa-star"></i><i class="fa  fa-star"></i><i class="fa  fa-star"></i><i class="fa  fa-star"></i><span class="text-left ml-0">¡Más de 2500 estudiantes felices!</span></div>
+        <h2>Ahorrá tiempo. <br>Mejorá tus calificaciones. <br>Aprobá.</h2>
+        <p> En 10 minutos tendrás todo resuelto</p>
+          <div class="pl-5 mt-3 d-none d-md-block"><h4 class="text-danger"><strike>$999ARS</strike></h4><h2>$499ARS</h2><span class="text-white text-right" style="color:#ffc600;">por cada pregunta</span>
+          </div>
+          <div class=" mt-3 d-md-none text-center"><hr class="bg-white">
+              <h3 class="text-danger"><strike id="totalPrice">$999ARS</strike></h3><h2 style="font-size:49px;">$499ARS</h2><br><span class="text-white text-right" style="color:#ffc600;">por cada pregunta</span>
+          </div>
+          <img src="images\tarea.webp" class="img-fluid mt-3 d-md-none">
+        <div class="buttonouter"><a href="#formu" class="btn-default wow zoomIn"><span>Cotizar mi tarea</span><img src="images\handicon.webp" width="30" height="19" ></a></div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<div class="footer section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="footlogo"><a href="www.tutarea.guru"><img src="images\logoblue.webp" width="220" height="42" ></a></div>
+        <div class="copyright"> &copy; 2023 Todos los derechos reservados</div>
+        <div class="copyright">hola@tutarea.guru</div>
+      </div>
+       
+    </div>
+  </div>
+</div>
+    
+    
+<link href="css\woco-accordion.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css\owl.carousel.css">
+<link rel="stylesheet" href="css\owl.theme.default.css">    
+<script src="js\woco.accordion.min.js"></script>
+<script src="js\owl.carousel.js"></script>
+<script src="./js/api-functions.js"></script>
+<script src="js\function.js"></script>
+<script src="js\script.js"></script>
+</body>
+</html>

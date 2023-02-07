@@ -5,8 +5,8 @@ mercadopago.configure({
     access_token: config.MP_ACCESS_TOKEN
   });
 
-const mercadopagoPayment = async () => {
-    let urlMercadopago;
+const mercadopagoPayment = async email => {
+    let response;
     const preference = {
         items: [
           {
@@ -16,20 +16,23 @@ const mercadopagoPayment = async () => {
           }
         ],
         back_urls: {
-            success: "https://localhost:8080/success",
-            failure: "https://localhost:8080/failure",
-            pending: "https://localhost:8080/pending"
-        }
+            success: "https://www.tarea.guru/homework/backURL",
+            failure: "https://www.tarea.guru/failure.html"
+        },
+        payer: {
+          email
+        },
+        auto_return: "approved"
       };
-
+      
       try {
-        urlMercadopago = await mercadopago.preferences.create(preference)
+        response = await mercadopago.preferences.create(preference)
       } catch (error) {
         console.log(error)
         throw new Error('Mercadopago payment error')
       }
       
-      return urlMercadopago;
+      return response;
       
 }
 

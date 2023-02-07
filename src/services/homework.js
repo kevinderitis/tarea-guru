@@ -4,15 +4,25 @@ const { quoteHomework } = require('../utils/utils')
 
 const saveHomeworkService = async homework => {
     try {
-      await saveHomework(homework)   
       let value = quoteHomework(homework.data)
-      let urlMP = await mercadopagoPayment(homework)
-      return urlMP;
+      let response = await mercadopagoPayment(homework.email)
+      homework.preference_id = response.id;
+      await saveHomework(homework)   
+      return response;
     } catch (error) {
         console.log(error)
         throw error
     }
  
+}
+
+const setNewPayment = preferenceId => {
+  try {
+    
+  } catch (error) {
+    console.log(error)
+    throw error
+  }
 }
 
 module.exports = { saveHomeworkService }

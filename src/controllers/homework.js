@@ -1,4 +1,5 @@
-const { saveHomeworkService } = require('../services/homework')
+const path = require('path');
+const { saveHomeworkService, setNewPayment } = require('../services/homework')
 
 const saveHomework = async (req, res) => {
     try {
@@ -12,4 +13,16 @@ const saveHomework = async (req, res) => {
 
 }
 
-module.exports = { saveHomework };
+const backFromMP = async (req, res) => {
+   const paymentData = req.body;
+   const { preference_id } = paymentData;
+   try {
+    await setNewPayment(preference_id)
+    res.sendFile(path.join(__dirname, 'public', 'gracias.html'));
+   } catch (error) {
+    res.json({ msg: "Error", error })
+   }
+
+} 
+
+module.exports = { saveHomework, backFromMP };
