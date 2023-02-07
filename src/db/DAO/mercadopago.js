@@ -5,13 +5,13 @@ mercadopago.configure({
     access_token: config.MP_ACCESS_TOKEN
   });
 
-const mercadopagoPayment = async email => {
+const mercadopagoPayment = async (email, price) => {
     let response;
     const preference = {
         items: [
           {
             title: config.ITEM_NAME,
-            unit_price: Number(config.ITEM_PRICE),
+            unit_price: Number(price),
             quantity: 1
           }
         ],

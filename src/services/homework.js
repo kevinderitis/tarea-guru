@@ -1,11 +1,11 @@
-const { saveHomework } = require('../db/DAO/homework')
+const { saveHomework, setPayment } = require('../db/DAO/homework')
 const { mercadopagoPayment } = require('../db/DAO/mercadopago')
 const { quoteHomework } = require('../utils/utils')
 
 const saveHomeworkService = async homework => {
     try {
-      let value = quoteHomework(homework.data)
-      let response = await mercadopagoPayment(homework.email)
+      let price = quoteHomework(homework.data)
+      let response = await mercadopagoPayment(homework.email, price)
       homework.preference_id = response.id;
       await saveHomework(homework)   
       return response;
@@ -16,13 +16,13 @@ const saveHomeworkService = async homework => {
  
 }
 
-const setNewPayment = preferenceId => {
+const setNewPayment = async preferenceId => {
   try {
-    
+    await setPayment(preferenceId)
   } catch (error) {
     console.log(error)
     throw error
   }
 }
 
-module.exports = { saveHomeworkService }
+module.exports = { saveHomeworkService, setNewPayment }

@@ -1,5 +1,8 @@
+const config = require('../config/config')
+
 const quoteHomework = homework => {
-    return { questions: 10, price: 20 }
+    let price = homework.length * Number(config.UNIT_PRICE)
+    return price
 }
 
 module.exports = { quoteHomework }

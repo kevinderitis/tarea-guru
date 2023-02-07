@@ -24,4 +24,13 @@ const saveHomework = async (homework) => {
 
 }
 
-module.exports = { saveHomework }
+const setPayment = async preferenceId => {
+    try {
+        await homeworkModel.updateOne({ preference_id: preferenceId }, { $set: { payment: "Approved" } })
+    } catch (error) {
+        console.log(error)
+        throw new Error(error)
+    }
+}
+
+module.exports = { saveHomework, setPayment }
