@@ -8,7 +8,7 @@ const saveHomeworkService = async homework => {
       let mp = await mercadopagoPayment(homework.email, price)
       homework.preference_id = mp.response.id;
       await saveHomework(homework)   
-      return response;
+      return mp;
     } catch (error) {
         console.log(error)
         throw error
