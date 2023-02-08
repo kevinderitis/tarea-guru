@@ -5,8 +5,8 @@ const { quoteHomework } = require('../utils/utils')
 const saveHomeworkService = async homework => {
     try {
       let price = quoteHomework(homework.data)
-      let response = await mercadopagoPayment(homework.email, price)
-      homework.preference_id = response.id;
+      let mp = await mercadopagoPayment(homework.email, price)
+      homework.preference_id = mp.response.id;
       await saveHomework(homework)   
       return response;
     } catch (error) {
