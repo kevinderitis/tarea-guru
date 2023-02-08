@@ -14,13 +14,14 @@ const saveHomework = async (req, res) => {
 }
 
 const backFromMP = async (req, res) => {
-   const paymentData = req.body;
+   const paymentData = req.query;
    const { preference_id } = paymentData;
    try {
     await setNewPayment(preference_id)
-    res.sendFile(path.join(__dirname, 'public', 'gracias.html'));
+    res.redirect('/gracias.html')
    } catch (error) {
-    res.json({ msg: "Error", error })
+    console.log(error)
+    res.json({ msg: "Error", error: JSON.stringify(error) })
    }
 
 } 

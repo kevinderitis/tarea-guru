@@ -6,11 +6,13 @@ const initDatabase = async () => {
         await mongoose.connect('mongodb+srv://kevinderitis:Ujl3V7iJbw2nAsYX@cluster0.ndvhrgl.mongodb.net/tareaguru?retryWrites=true&w=majority')
     } catch (error) {
         console.log(error)
-        throw new Error(error)
     }
 }
 
-initDatabase()
+
+ initDatabase()
+
+
 
 const saveHomework = async (homework) => {
     try {
